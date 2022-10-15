@@ -74,7 +74,6 @@ def featurize(sales, calendar, prices, sales_label_encoders, calendar_label_enco
     sales = sales_label_encoder_test(sales, sales_label_encoders)
     melted_sales = melt_sales(sales)
 
-    calendar = pd.read_csv('dataset/calendar.csv')
     calendar = calendar.fillna('RegularDay')
     calendar['d'] = calendar['d'].str.replace('d_', '').astype(np.int16)
     calendar.drop(['weekday', 'date'], axis=1, inplace=True)
