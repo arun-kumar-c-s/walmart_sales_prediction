@@ -1,0 +1,9 @@
+https://arun-kumar-c-s-walmart-sales-prediction-app-tjpfki.streamlitapp.com/
+https://walmartsalespred-fgrpzob4ia-wn.a.run.app/
+
+
+gcloud builds submit --tag gcr.io/streamlit-app-365604/walmart_sales_pred --project=streamlit-app-365604
+
+
+
+
